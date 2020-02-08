@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RegistroActivity"
     android:background="@drawable/pokedex3_bg"
     >
 
@@ -26,14 +26,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/happy_monkey"
-            android:text="Pókedex 3"
+            android:text="Registro"
             android:textAlignment="center"
             android:textColor="#FA823F"
             android:textSize="36sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/et_usuario"
+            android:id="@+id/et_usuario1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -42,43 +42,33 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/et_password"
+        android:id="@+id/et_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/happy_monkey"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+        <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="@font/happy_monkey"
+        android:hint="Repetir password"
+        android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_registrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:ems="10"
+            android:backgroundTint="@color/colorSalmon"
             android:fontFamily="@font/happy_monkey"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:text="Registrarse"
+            android:textColorLink="@color/colorSalmon"
+            android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/colorSalmon"
-                android:fontFamily="@font/happy_monkey"
-                android:text="Login"
-                android:textColorLink="@color/colorSalmon"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/btn_registro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/colorSalmon"
-                android:fontFamily="@font/happy_monkey"
-                android:text="Registro"
-                android:textColorLink="@color/colorSalmon"
-                android:textSize="18sp" />
-        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
